@@ -24,3 +24,5 @@ C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\MouseCon
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\MouseControl.Properties.Resources.resources
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Debug\MouseControl.exe.config
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Debug\Alchemy.dll

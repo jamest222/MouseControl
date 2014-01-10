@@ -22,7 +22,11 @@ namespace MouseControl
         public MainWindow()
         {
             InitializeComponent();
-            HTTPServer WebServer = new HTTPServer("C:\\Users\\James\\Documents\\GitHub\\MouseControl\\MouseControl\\html\\");   
+            HTTPServer WebServer = new HTTPServer("C:\\Users\\James\\Documents\\GitHub\\MouseControl\\MouseControl\\html\\");
+            //MouseController mouse = new MouseController();
+            //Console.WriteLine("Move mouse");
+            //mouse.moveMouse(500, 500);
+            Websocket ws = new Websocket();
         }
     }
 }
