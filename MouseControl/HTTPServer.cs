@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Net;
+using System.Net.Sockets;
 
 namespace MouseControl
 {
@@ -12,12 +13,12 @@ namespace MouseControl
 
         public HTTPServer(string FileFolder)
         {
-
             folder = FileFolder;
             Console.WriteLine("Creating Web server");
             
             HttpListener listener = new HttpListener();
             listener.Prefixes.Add("http://localhost:8080/");
+            listener.Prefixes.Add("http://" + getIPAddress() + ":8080/");
             listener.Start();
             
             listener.BeginGetContext(new AsyncCallback(OnRequestReceive), listener);
@@ -88,6 +89,19 @@ namespace MouseControl
 
             return file; 
 
+        }
+
+        private string getIPAddress()
+        {
+            IPHostEntry host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (IPAddress ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    return ip.ToString();
+                };
+            }
+            return "";
         }
     }
 }
