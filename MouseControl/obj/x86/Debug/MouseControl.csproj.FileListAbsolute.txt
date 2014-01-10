@@ -11,3 +11,16 @@ c:\users\james\documents\visual studio 2010\Projects\MouseControl\MouseControl\o
 c:\users\james\documents\visual studio 2010\Projects\MouseControl\MouseControl\obj\x86\Debug\GenerateResource.write.1.tlog
 c:\users\james\documents\visual studio 2010\Projects\MouseControl\MouseControl\obj\x86\Debug\MouseControl.exe
 c:\users\james\documents\visual studio 2010\Projects\MouseControl\MouseControl\obj\x86\Debug\MouseControl.pdb
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\MouseControl.exe
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\MouseControl.pdb
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Debug\MouseControl.exe
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Debug\MouseControl.pdb
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\MainWindow.baml
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\MainWindow.g.cs
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\App.g.cs
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\MouseControl_MarkupCompile.cache
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\MouseControl.g.resources
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\MouseControl.Properties.Resources.resources
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\GenerateResource.write.1.tlog

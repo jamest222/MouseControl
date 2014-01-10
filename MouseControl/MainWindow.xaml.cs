@@ -22,7 +22,7 @@ namespace MouseControl
         public MainWindow()
         {
             InitializeComponent();
-            HTTPServer WebServer = new HTTPServer("C:\\Users\\James\\Documents\\Visual Studio 2010\\Projects\\MouseControl\\MouseControl\\html\\");   
+            HTTPServer WebServer = new HTTPServer("C:\\Users\\James\\Documents\\GitHub\\MouseControl\\MouseControl\\html\\");   
         }
     }
 }

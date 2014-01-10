@@ -28,21 +28,66 @@ namespace MouseControl
             HttpListener listener = (HttpListener)result.AsyncState;
             HttpListenerContext context = listener.EndGetContext(result);
             HttpListenerResponse response = context.Response;
-            byte[] buff = getFileBytes("C:\\Users\\James\\Documents\\Visual Studio 2010\\Projects\\MouseControl\\MouseControl\\html\\index.htm");
-            Console.WriteLine(context.Request.RawUrl);
+
+            byte[] buff = getFile(context.Request.RawUrl);
+            response.ContentType = getContentType(context.Request.RawUrl);
             response.Close(buff, true);
 
             listener.BeginGetContext(new AsyncCallback(OnRequestReceive), listener); 
         }
 
-        private byte[] getFileBytes(string path)
+        private string getContentType(string requestURI)
         {
-            return System.IO.File.ReadAllBytes(path); 
+            string type = "";
+            requestURI = requestURI.ToLower();
+
+            if (requestURI.Contains(".htm") || requestURI.Contains(".html")) 
+            {
+                type = "text/html";
+            }
+            else if (requestURI.Contains(".css")) 
+            {
+                type = "text/css";
+            }
+            else if (requestURI.Contains(".js")) 
+            {
+                type = "text/js";
+            }
+            else if (requestURI.Contains(".png") || requestURI.Contains(".jpg") || requestURI.Contains(".jpeg"))
+            {
+                type = "text/jpeg";
+            }
+            else
+            {
+                type = "text/html";
+            }
+
+            return type;
         }
 
-        private string getContentType(string filename)
+        private byte[] getFile(String requestURI)
         {
-            return "text/html";
+            // Remove the / from the URI
+            requestURI = requestURI.Remove(0, 1);
+            if (requestURI == "")
+            {
+                requestURI = "index.htm";
+            }
+            string path = folder + requestURI;
+
+            //Ensure file exists
+            byte[] file;
+            if (System.IO.File.Exists(path))
+            {
+                file = System.IO.File.ReadAllBytes(path);
+            }
+            else
+            {
+                file = System.Text.Encoding.UTF8.GetBytes("File not found");
+            }
+
+            return file; 
+
         }
     }
 }
