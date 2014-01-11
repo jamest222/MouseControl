@@ -19,6 +19,7 @@ namespace MouseControl
             HttpListener listener = new HttpListener();
             listener.Prefixes.Add("http://localhost:8080/");
             listener.Prefixes.Add("http://" + getIPAddress() + ":8080/");
+            Console.WriteLine("http://"+getIPAddress()+":8080/");
             listener.Start();
             
             listener.BeginGetContext(new AsyncCallback(OnRequestReceive), listener);
