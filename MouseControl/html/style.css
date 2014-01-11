@@ -4,26 +4,29 @@
 }
 
 body {
-	background-color: #e8e8e8;
+	background-color: #555;
 	overflow: hidden;
 }
 
-#header {
-	width: 100%;
-	height: 50px;
-	background: #1E1E1E;
-}
 
-#menu_icon {
+#btns {
 	position: absolute;
-	right: 0;
-	margin-top: 10px;
-	margin-right: 6px;
+	overflow: hidden;
+	width: 100%;
+	bottom: 0;
+	background-color: #333;
+	border-top: 5px solid #333;
 }
 
-#menu {
-	width: 100%;
-	height: 70px;
-	background-color: red;
-	display:none;
+#btns a {
+	width: 49%;
+	background-color: #444;
+	display:block;
+	text-align: center;
+	height: 50px;
+	border-bottom: none;
+}
+
+#btns a:active {
+	background-color: #888;
 }

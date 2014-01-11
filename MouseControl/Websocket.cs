@@ -34,7 +34,8 @@ namespace MouseControl
             mX = mousePos[0] + mX;
             mY = mousePos[1] + mY;
 
-            MouseController.moveMouse(mX, mY);
+            //MouseController.moveMouse(mX, mY);
+            MouseController.MouseLeft();
         }
 
         private void newConnection(UserContext context)

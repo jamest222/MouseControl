@@ -21,8 +21,6 @@ window.onload = function() {
 				startX = e.touches[0].pageX;
 				startY = e.touches[0].pageY;
 
-				body.innerHTML += xMove.toString() + "<br>";
-
 				ws.send(move);
 
 			});
@@ -31,6 +29,19 @@ window.onload = function() {
 			body.addEventListener("touchstart", function(e) {
 				startX = e.touches[0].pageX;
 				startY = e.touches[0].pageY;
+			});
+
+			// Add support for mouse buttons
+			var left = document.getElementById("left");
+			left.addEventListener("click", function(e) {
+				e.preventDefault();
+				
+			});
+
+			var right = document.getElementById("right");
+			right.addEventListener("click", function(e) {
+				e.preventDefault();
+				alert("RIGHT CLICK");
 			});
 		}
 	}
