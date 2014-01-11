@@ -29,12 +29,17 @@ namespace MouseControl
             string[] XandY = move.Split(',');
             int mX = Int32.Parse(XandY[0]);
             int mY = Int32.Parse(XandY[1]);
+
+            int[] mousePos = MouseController.GetMousePosition();
+            mX = mousePos[0] + mX;
+            mY = mousePos[1] + mY;
+
             MouseController.moveMouse(mX, mY);
         }
 
         private void newConnection(UserContext context)
         {
-            Console.WriteLine("ConnectionMade");
+            
         }
 
         private void attemptingConnect(UserContext context)
