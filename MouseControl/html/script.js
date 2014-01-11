@@ -35,7 +35,7 @@ window.onload = function() {
 			var left = document.getElementById("left");
 			left.addEventListener("click", function(e) {
 				e.preventDefault();
-				
+				ws.send("left");
 			});
 
 			var right = document.getElementById("right");
