@@ -18,7 +18,7 @@ namespace MouseControl
             //
         }
 
-        public void moveMouse(int pointX, int pointY)
+        public static void moveMouse(int pointX, int pointY)
         {
             SetCursorPos(pointX, pointY);
         }

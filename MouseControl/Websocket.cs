@@ -15,21 +15,36 @@ namespace MouseControl
             ws = new WebSocketServer(9000, System.Net.IPAddress.Any)
             {
                 OnReceive = ReceivedMsg,
-                OnConnected = newConnection
+                OnConnected = newConnection,
+                OnConnect = attemptingConnect,
+                OnDisconnect = DisconnectedConnection
             };
-
             ws.Start();
 
         }
 
         private void ReceivedMsg(UserContext context)
         {
-           Console.WriteLine(context.DataFrame.ToString());
+            string move = context.DataFrame.ToString();
+            string[] XandY = move.Split(',');
+            int mX = Int32.Parse(XandY[0]);
+            int mY = Int32.Parse(XandY[1]);
+            MouseController.moveMouse(mX, mY);
         }
 
         private void newConnection(UserContext context)
         {
             Console.WriteLine("ConnectionMade");
+        }
+
+        private void attemptingConnect(UserContext context)
+        {
+            Console.WriteLine(context.ClientAddress.ToString());
+        }
+
+        private void DisconnectedConnection(UserContext context)
+        {
+            Console.WriteLine(context.ClientAddress.ToString());
         }
     }
 }

@@ -1,14 +1,31 @@
 window.onload = function() {
 
-	// Create websocket
-	var ws = new WebSocket("ws://localhost:9000");
-	ws.onopen = function() {
-		ws.send("Test from client");
+	var centerX = $(window).width() / 2;
+	var centerY = $(window).height() / 2;
+
+	if (WebSocket) {
+		//alert("Supported");
 	}
 
-	document.getElementById("menu_btn").addEventListener("click", function(e) {
+	// Create websocket
+	var ws = new WebSocket("ws://192.168.0.2:9000");
+	ws.onopen = function() {
+		//alert("connected");
+		//ws.send("Test from client");
+	}
+
+	// use body as scroll
+	var body = document.getElementsByTagName("body")[0];
+	body.addEventListener("touchmove", function(e) {
 		e.preventDefault();
-		ws.send("From btn");
+
+		// Get amount to move 
+		var xMove = (e.touches[0].pageX - centerX);
+		var yMove = (e.touches[0].pageY - centerY);
+		var move = xMove.toString()+","+yMove.toString();
+		ws.send(move);
+
 	});
+
 
 }
