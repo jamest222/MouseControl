@@ -30,3 +30,5 @@ C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Debug\MouseControl
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Debug\MouseControl.application
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\MouseControl.exe.manifest
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\MouseControl.application
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Debug\Hardcodet.Wpf.TaskbarNotification.dll
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Debug\Hardcodet.Wpf.TaskbarNotification.pdb

@@ -10,16 +10,18 @@ namespace MouseControl
     class HTTPServer
     {
         private string folder;
+        public string runningIp;
 
         public HTTPServer(string FileFolder)
         {
+            // Set the ip of the machine;
+            runningIp = "http://" + getIPAddress() + ":8080/";
             folder = FileFolder;
             Console.WriteLine("Creating Web server");
             
             HttpListener listener = new HttpListener();
             listener.Prefixes.Add("http://localhost:8080/");
-            listener.Prefixes.Add("http://" + getIPAddress() + ":8080/");
-            Console.WriteLine("http://"+getIPAddress()+":8080/");
+            listener.Prefixes.Add(runningIp);
             listener.Start();
             
             listener.BeginGetContext(new AsyncCallback(OnRequestReceive), listener);
