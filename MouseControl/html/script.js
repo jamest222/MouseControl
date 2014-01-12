@@ -41,7 +41,7 @@ window.onload = function() {
 			var right = document.getElementById("right");
 			right.addEventListener("click", function(e) {
 				e.preventDefault();
-				alert("RIGHT CLICK");
+				ws.send("right");
 			});
 		}
 	}

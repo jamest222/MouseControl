@@ -26,10 +26,16 @@ namespace MouseControl
         private void ReceivedMsg(UserContext context)
         {
             string message = context.DataFrame.ToString();
-            if (message.Contains("left")) {
+            if (message.Contains("left")) 
+            {
                 MouseController.MouseLeft();
             }
-            else {
+            else if (message.Contains("right"))
+            {
+                MouseController.MouseRight();
+            }
+            else
+            {
                 string move = context.DataFrame.ToString();
                 string[] XandY = move.Split(',');
                 int mX = Int32.Parse(XandY[0]);

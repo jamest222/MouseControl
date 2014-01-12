@@ -64,5 +64,15 @@ namespace MouseControl
             UIntPtr ptr = new UIntPtr();
             mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, uX, uY, 0, ptr);
         }
+
+        // Mouse right click
+        public static void MouseRight()
+        {
+            int[] pos = GetMousePosition();
+            uint uX = (uint)(int)pos[0];
+            uint uY = (uint)(int)pos[1];
+            UIntPtr ptr = new UIntPtr();
+            mouse_event(MOUSEEVENTF_RIGHTDOWN | MOUSEEVENTF_RIGHTUP, uX, uY, 0, ptr);
+        }
     }
 }
