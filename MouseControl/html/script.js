@@ -21,6 +21,7 @@ window.onload = function() {
 				startX = e.touches[0].pageX;
 				startY = e.touches[0].pageY;
 
+
 				ws.send(move);
 
 			});
@@ -64,6 +65,18 @@ window.onload = function() {
 			});
 		}
 	}
+}
 
+// Provide styling to the touch area
+function provideStyling(x, y) {
+	var glow = document.createElement("div");
+	glow.style.left = x + "px";
+	glow.style.top = y + "px";
+	glow.id = "highlightTouch";
+	document.getElementsByTagName("body")[0].appendChild(glow);
+}
 
+function removeStyling() {
+	var glow = document.getElementById("highlightTouch");
+	glow.parentNode.removeChild(glow);
 }

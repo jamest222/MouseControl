@@ -26,3 +26,7 @@ C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\Generate
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Debug\MouseControl.exe.config
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Debug\Alchemy.dll
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Debug\MouseControl.exe.manifest
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Debug\MouseControl.application
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\MouseControl.exe.manifest
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Debug\MouseControl.application

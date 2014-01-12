@@ -30,3 +30,11 @@ body {
 #btns a:active {
 	background-color: #888;
 }
+
+#highlightTouch {
+	background-color: #888;
+	height: 30px;
+	width: 30px;
+	border-radius: 25px;
+	position:absolute;
+}
