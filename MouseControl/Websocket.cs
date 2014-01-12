@@ -28,7 +28,12 @@ namespace MouseControl
             string message = context.DataFrame.ToString();
             if (message.Contains("left")) 
             {
-                MouseController.MouseLeft();
+                bool dblClick = false;
+                if (message.Contains("dbl")) 
+                {
+                    dblClick = true;
+                }
+                MouseController.MouseLeft(dblClick);
             }
             else if (message.Contains("right"))
             {

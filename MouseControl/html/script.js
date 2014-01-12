@@ -1,6 +1,6 @@
 window.onload = function() {
 
-	var startX, startY;
+	var startX, startY, leftDbl = 0, rightDbl = 0;
 
 	if (WebSocket) {
 		// Create websocket
@@ -35,12 +35,31 @@ window.onload = function() {
 			var left = document.getElementById("left");
 			left.addEventListener("click", function(e) {
 				e.preventDefault();
-				ws.send("left");
+			});
+			// Use touchend for better responsiveness than click
+			left.addEventListener("touchend", function(e) {
+				leftDbl++;
+				setTimeout(function() {
+					if (leftDbl == 0) {
+						return;
+					}
+					else if (leftDbl == 1) {
+						leftDbl = 0;
+						ws.send("left");
+					}
+					else {
+						leftDbl = 0;
+						ws.send("left_dbl");
+					}
+				}, 500);
 			});
 
 			var right = document.getElementById("right");
 			right.addEventListener("click", function(e) {
 				e.preventDefault();
+			});
+			// Once again touchend for right too
+			right.addEventListener("touchend", function() {
 				ws.send("right");
 			});
 		}

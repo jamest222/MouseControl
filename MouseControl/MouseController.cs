@@ -56,13 +56,20 @@ namespace MouseControl
         private const uint MOUSEEVENTF_RIGHTUP = 0x10;
 
         // Mouse left click
-        public static void MouseLeft()
+        public static void MouseLeft(bool isDbl)
         {
             int[] pos = GetMousePosition();
             uint uX = (uint)(int)pos[0];
             uint uY = (uint)(int)pos[1];
             UIntPtr ptr = new UIntPtr();
             mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, uX, uY, 0, ptr);
+            
+            // Is it a double click
+            if (isDbl)
+            {
+                System.Threading.Thread.Sleep(200);
+                mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, uX, uY, 0, ptr);
+            }
         }
 
         // Mouse right click
