@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Hardcodet.Wpf.TaskbarNotification;
 using System.Threading;
+using System.Drawing;
 
 namespace MouseControl
 {
@@ -39,12 +40,20 @@ namespace MouseControl
             // The display text of the icon
             string DisplayText = "MouseControl running at " + WebServer.runningIp;
             systemIcon = new TaskbarIcon();
+            systemIcon.Icon = new System.Drawing.Icon(typeof(App), "systemtrayicon.ico"); ;
             systemIcon.ToolTipText = DisplayText;
             systemIcon.ShowBalloonTip("MouseControl", DisplayText, BalloonIcon.Info);
 
             // Remove the text after a certain amount of time
             Thread.Sleep(6000);
             systemIcon.HideBalloonTip();
+        }
+
+        // Get the system tray icon
+        private void getIcon()
+        {
+            Bitmap iconBitmap = new Bitmap("");
+            
         }
     }
 }

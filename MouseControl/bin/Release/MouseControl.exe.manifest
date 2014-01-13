@@ -54,26 +54,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hardcodet.Wpf.TaskbarNotification.dll" size="47104">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hardcodet.Wpf.TaskbarNotification.dll" size="44032">
       <assemblyIdentity name="Hardcodet.Wpf.TaskbarNotification" version="1.0.5.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>bIRxHBIYPMofTV68FBztNvjZgX8=</dsig:DigestValue>
+        <dsig:DigestValue>VTyknmx2Ym9zbUegFroyu0hulCY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MouseControl.exe" size="13312">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MouseControl.exe" size="14336">
       <assemblyIdentity name="MouseControl" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>G/B2Nx9jD7hS+fMEUIAvWS0mj+g=</dsig:DigestValue>
+        <dsig:DigestValue>lTNfqUVvJxLT/wGbCIU0BSoJpn4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
