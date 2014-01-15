@@ -1,11 +1,15 @@
 window.onload = function() {
 
-	var startX, startY, leftDbl = 0, rightDbl = 0;
+	var startX, startY, leftDbl = 0, rightDbl = 0, keyboard = false;
 
 	if (WebSocket) {
 		// Create websocket
 		var ws = new WebSocket("ws://192.168.0.2:9000");
 		ws.onopen = function() {
+
+			/*
+			*  Mouse
+			*/
 
 			// use body as scroll
 			var body = document.getElementsByTagName("body")[0];
@@ -21,8 +25,10 @@ window.onload = function() {
 				startX = e.touches[0].pageX;
 				startY = e.touches[0].pageY;
 
-
-				ws.send(move);
+				// Make sure keyboard isn't in use
+				if (!keyboard) {
+					ws.send(move);
+				}
 
 			});
 
@@ -63,6 +69,38 @@ window.onload = function() {
 			right.addEventListener("touchend", function() {
 				ws.send("right");
 			});
+
+			/*
+			* Keyboard
+			*/
+			// Listen for device orientation change to display keyboard
+			window.addEventListener("orientationchange", function() {
+				if (window.orientation == 0) {
+					keyboard = false;
+					hideKeyboard();
+				}
+				else {
+					keyboard = true;
+					showKeyboard();
+				}
+			});
+
+			// Listen for keyboard keys
+			var key = document.getElementById("staging_area");
+			key.addEventListener("keydown", function(e) {
+				var sendMsg = "key,"+e.keyCode;
+				ws.send(sendMsg);
+			});
+
+			// Listen for keyboard display;
+			key.addEventListener("focus", function() {
+				this.innerHTML = "";
+				this.style.color = "#555";
+			});
+			key.addEventListener("blur", function() {
+				this.innerHTML = "Tap to open the keyboard";
+				this.style.color = "#e8e8e8";
+			});
 		}
 	}
 }
@@ -79,4 +117,17 @@ function provideStyling(x, y) {
 function removeStyling() {
 	var glow = document.getElementById("highlightTouch");
 	glow.parentNode.removeChild(glow);
+}
+
+// Show the keyboard
+function showKeyboard() {
+	var key = document.getElementById("keyboard");
+	key.style.display = "block";
+}
+
+// Hide the keyboard
+function hideKeyboard() {
+	var key = document.getElementById("keyboard");
+	key.style.display = "none";
+	key.getElementsByTagName("textarea")[0].blur();
 }

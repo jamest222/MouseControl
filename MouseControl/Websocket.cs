@@ -39,6 +39,10 @@ namespace MouseControl
             {
                 MouseController.MouseRight();
             }
+            else if (message.Contains("key"))
+            {
+                Console.WriteLine("Keycode");
+            }
             else
             {
                 string move = context.DataFrame.ToString();
