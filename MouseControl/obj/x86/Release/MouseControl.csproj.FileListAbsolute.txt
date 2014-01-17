@@ -21,3 +21,6 @@ C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\MouseC
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\MouseControl.exe
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\MouseControl.pdb
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\systemtrayicon.ico
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\InputSimulator.dll
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\InputSimulator.pdb
+C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\InputSimulator.xml

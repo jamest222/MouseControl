@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Input;
 using System.Runtime.InteropServices;
+using WindowsInput;
 
 namespace MouseControl
 {
@@ -80,6 +81,13 @@ namespace MouseControl
             uint uY = (uint)(int)pos[1];
             UIntPtr ptr = new UIntPtr();
             mouse_event(MOUSEEVENTF_RIGHTDOWN | MOUSEEVENTF_RIGHTUP, uX, uY, 0, ptr);
+        }
+
+        // Keyboard input
+        public static void SendKey(string KeyCode)
+        {
+            int KeyCodeInt = Convert.ToInt32(KeyCode);
+            InputSimulator.SimulateKeyPress((VirtualKeyCode)KeyCodeInt);            
         }
     }
 }

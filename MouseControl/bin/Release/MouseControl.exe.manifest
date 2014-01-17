@@ -66,6 +66,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="InputSimulator.dll" size="13824">
+      <assemblyIdentity name="InputSimulator" version="0.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>yrSsmb2HuzxoTy898oeZOyp88Fg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MouseControl.exe" size="14336">
       <assemblyIdentity name="MouseControl" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
@@ -73,7 +85,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>1g5I+s7713eaXeTMA5XLTpaUhzc=</dsig:DigestValue>
+        <dsig:DigestValue>DcRjBMN9qZ1OCvlLUI2UgBqYvC4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

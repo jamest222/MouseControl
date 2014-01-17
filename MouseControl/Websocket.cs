@@ -41,7 +41,7 @@ namespace MouseControl
             }
             else if (message.Contains("key"))
             {
-                Console.WriteLine("Keycode");
+                HandleKeyIn(message);
             }
             else
             {
@@ -71,6 +71,14 @@ namespace MouseControl
         private void DisconnectedConnection(UserContext context)
         {
             Console.WriteLine(context.ClientAddress.ToString());
+        }
+
+        private void HandleKeyIn(string message)
+        {
+            string[] messageSplit = message.Split(',');
+            string key = messageSplit[1];
+            Console.WriteLine(key);
+            MouseController.SendKey(key);
         }
     }
 }
