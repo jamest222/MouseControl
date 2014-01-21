@@ -36,6 +36,20 @@ window.onload = function() {
 			body.addEventListener("touchstart", function(e) {
 				startX = e.touches[0].pageX;
 				startY = e.touches[0].pageY;
+
+				/*
+				* Detect a tap
+				*/
+				// Cache the X/Y (to detect whether move or tap)
+				var cacheX = startX;
+				var cacheY = startY;
+				// Detect tap
+				setTimeout(function() {
+					if ((cacheY == startY) && (cacheX == startX)) {
+						ws.send("left");
+					}
+				}, 200);
+
 			});
 
 			// Add support for mouse buttons
