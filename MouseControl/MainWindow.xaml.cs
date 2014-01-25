@@ -49,13 +49,35 @@ namespace MouseControl
             // Remove the text after a certain amount of time
             Thread.Sleep(6000);
             systemIcon.HideBalloonTip();
+
+            // Add context menu
+            ContextMenu cMenu = new ContextMenu();
+
+            MenuItem about = new MenuItem();
+            about.Header = "About";
+            about.Click += aboutClick;
+
+            MenuItem exit = new MenuItem();
+            exit.Header = "Exit";
+            exit.Click += exitClick;
+
+            cMenu.Items.Add(about);
+            cMenu.Items.Add(exit);
+
+            systemIcon.ContextMenu = cMenu;
+
         }
 
-        // Get the system tray icon
-        private void getIcon()
+        // About button in the context menu clicked
+        public void aboutClick(object sender, System.EventArgs e)
         {
-            Bitmap iconBitmap = new Bitmap("");
-            
+            this.Show();
+        }
+
+        // Exit button clicked
+        public void exitClick(object sender, System.EventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }
