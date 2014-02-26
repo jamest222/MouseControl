@@ -1,6 +1,4 @@
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\MouseControl.exe.config
-C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\MouseControl.exe.manifest
-C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\MouseControl.application
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\MouseControl.exe
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\MouseControl.pdb
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\Alchemy.dll
@@ -13,8 +11,6 @@ C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\App.g.
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\MouseControl_MarkupCompile.cache
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\MouseControl.g.resources
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\MouseControl.Properties.Resources.resources
-C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\MouseControl.exe.manifest
-C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\MouseControl.application
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\MouseControl.exe
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\MouseControl.pdb
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\systemtrayicon.ico
