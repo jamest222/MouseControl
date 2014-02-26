@@ -42,7 +42,7 @@ namespace MouseControl
             // The display text of the icon
             string DisplayText = "MouseControl running at " + WebServer.runningIp;
             systemIcon = new TaskbarIcon();
-            systemIcon.Icon = new System.Drawing.Icon(typeof(App), "systemtrayicon.ico"); ;
+            systemIcon.Icon = new System.Drawing.Icon(typeof(App), "MouseControlIcon.ico"); ;
             systemIcon.ToolTipText = DisplayText;
             systemIcon.ShowBalloonTip("MouseControl", DisplayText, BalloonIcon.Info);
 
