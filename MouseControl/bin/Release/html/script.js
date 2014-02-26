@@ -3,8 +3,15 @@ window.onload = function() {
 	var startX, startY, leftDbl = 0, rightDbl = 0, keyboard = false;
 
 	if (WebSocket) {
+
 		// Create websocket
-		var ws = new WebSocket("ws://192.168.0.2:9000");
+		var url = document.URL;
+		var pieces = url.split(":");
+		pieces[0] = "ws";
+		pieces.pop();
+		url = pieces.join(":") + ":9000";
+		var ws = new WebSocket(url);
+
 		ws.onopen = function() {
 
 			/*
