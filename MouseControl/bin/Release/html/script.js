@@ -116,7 +116,7 @@ window.onload = function() {
 			// Listen for keyboard display;
 			key.addEventListener("focus", function() {
 				this.innerHTML = "";
-				this.style.color = "#555";
+				this.style.color = "#fff";
 			});
 			key.addEventListener("blur", function() {
 				this.innerHTML = "Tap to open the keyboard";

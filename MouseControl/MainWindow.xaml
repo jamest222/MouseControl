@@ -1,6 +1,6 @@
 ﻿<Window x:Class="MouseControl.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MouseControl" Height="350" Width="525" Visibility="Hidden" Icon="file:///C:/Users/JAMES/Documents/GitHub/MouseControl/MouseControl/MouseControlIcon.ico">
+        Title="MouseControl" Height="350" Width="525" Visibility="Hidden" Icon="file:///C:/Users/JAMES/Documents/GitHub/MouseControl/MouseControl/MouseControlIcon.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid></Grid>
 </Window>
