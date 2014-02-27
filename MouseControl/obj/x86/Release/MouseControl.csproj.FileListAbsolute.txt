@@ -16,7 +16,5 @@ C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\MouseC
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\systemtrayicon.ico
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\InputSimulator.pdb
 C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\InputSimulator.xml
-C:\Users\James\Documents\GitHub\MouseControl\MouseControl\bin\Release\InputSimulator.dll
-C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\ResolveAssemblyReference.cache
-C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\GenerateResource.read.1.tlog
-C:\Users\James\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\JAMES\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\MouseControl.csprojResolveAssemblyReference.cache
+C:\Users\JAMES\Documents\GitHub\MouseControl\MouseControl\obj\x86\Release\MouseControl.csproj.GenerateResource.Cache

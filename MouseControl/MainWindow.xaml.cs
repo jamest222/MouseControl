@@ -31,7 +31,6 @@ namespace MouseControl
             string htmlDir = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + "\\html\\";
             InitializeComponent();
             WebServer = new HTTPServer(htmlDir);
-            //"C:\\Users\\James\\Documents\\GitHub\\MouseControl\\MouseControl\\html\\"
             Websocket ws = new Websocket();
             AddTaskbarIcon();
         }

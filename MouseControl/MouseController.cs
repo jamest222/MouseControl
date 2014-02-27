@@ -10,15 +10,8 @@ namespace MouseControl
 {
 
     // Controls mouse movement
-    class MouseController
+    static class MouseController
     {
-        Cursor currCursor;
-
-        public MouseController()
-        {
-            //
-        }
-
         // Move mouse position
         public static void moveMouse(int pointX, int pointY)
         {
