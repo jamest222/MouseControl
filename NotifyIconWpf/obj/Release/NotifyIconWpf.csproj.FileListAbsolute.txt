@@ -4,3 +4,7 @@ C:\Users\James\Downloads\wpf-notifyicon\wpf-notifyicon\NotifyIconWpf\bin\Release
 C:\Users\James\Downloads\wpf-notifyicon\wpf-notifyicon\NotifyIconWpf\obj\Release\ResolveAssemblyReference.cache
 C:\Users\James\Downloads\wpf-notifyicon\wpf-notifyicon\NotifyIconWpf\obj\Release\Hardcodet.Wpf.TaskbarNotification.dll
 C:\Users\James\Downloads\wpf-notifyicon\wpf-notifyicon\NotifyIconWpf\obj\Release\Hardcodet.Wpf.TaskbarNotification.pdb
+C:\Users\JAMES\Documents\GitHub\MouseControl\NotifyIconWpf\bin\Release\Hardcodet.Wpf.TaskbarNotification.dll
+C:\Users\JAMES\Documents\GitHub\MouseControl\NotifyIconWpf\bin\Release\Hardcodet.Wpf.TaskbarNotification.pdb
+C:\Users\JAMES\Documents\GitHub\MouseControl\NotifyIconWpf\obj\Release\Hardcodet.Wpf.TaskbarNotification.dll
+C:\Users\JAMES\Documents\GitHub\MouseControl\NotifyIconWpf\obj\Release\Hardcodet.Wpf.TaskbarNotification.pdb
