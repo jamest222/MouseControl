@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: arial;
 }
 
 body {
@@ -57,4 +58,15 @@ body {
 	text-align: center;
 	padding: 20px;
 	color: #d8d8d8;
+}
+
+#connecting {
+	position: absolute;
+	z-index: 10;
+	top:0;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(0,137,196);
+	color: #fff;
+	text-align: center;
 }

@@ -12,6 +12,10 @@ window.onload = function() {
 		url = pieces.join(":") + ":9000";
 		var ws = new WebSocket(url);
 
+		setTimeout(function() {
+			$("#connecting").fadeOut(200);
+		}, 3000);
+
 		ws.onopen = function() {
 
 			/*
