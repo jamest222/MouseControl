@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("mousecontrolicon.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("navigate.png")]
 
 
