@@ -33,6 +33,9 @@ namespace MouseControl
             WebServer = new HTTPServer(htmlDir);
             Websocket ws = new Websocket();
             AddTaskbarIcon();
+
+            // Add to the front-end
+            this.lblMCLoc.Content = WebServer.runningIp;
         }
 
         // Adds the notification icon
@@ -41,7 +44,7 @@ namespace MouseControl
             // The display text of the icon
             string DisplayText = "MouseControl running at " + WebServer.runningIp;
             systemIcon = new TaskbarIcon();
-            systemIcon.Icon = new System.Drawing.Icon(typeof(App), "MouseControlIcon.ico"); ;
+            systemIcon.Icon = new System.Drawing.Icon(typeof(App), "MouseControlIcon.ico"); 
             systemIcon.ToolTipText = DisplayText;
             systemIcon.ShowBalloonTip("MouseControl", DisplayText, BalloonIcon.Info);
 
