@@ -66,6 +66,9 @@ namespace MouseControl
             cMenu.Items.Add(about);
             cMenu.Items.Add(exit);
 
+            // Add System tray icon click handler
+            systemIcon.TrayMouseDoubleClick += SystemTrayIconClick;
+
             systemIcon.ContextMenu = cMenu;
 
         }
@@ -80,6 +83,12 @@ namespace MouseControl
         public void exitClick(object sender, System.EventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        // System tray Icon click event
+        private void SystemTrayIconClick(object sender, System.EventArgs e)
+        {
+            this.Show();
         }
 
         // Overide form close to stop it shutting the app
