@@ -81,5 +81,12 @@ namespace MouseControl
         {
             Application.Current.Shutdown();
         }
+
+        // Overide form close to stop it shutting the app
+        protected override void OnClosing(System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+            this.Visibility = Visibility.Hidden;
+        }
     }
 }
