@@ -4,8 +4,8 @@
         Title="MouseControl" Height="432" Width="534" Visibility="Hidden" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#FF00A4EA" WindowStyle="SingleBorderWindow">
     <Grid Height="355" Width="504">
         <Image Source="MouseControlLogo.png" HorizontalAlignment="Center" Width="239" Margin="130,-18,135,236" />
-        <Label Content="is currently running at:" Height="37" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="12,98,0,0" Name="lblRunningAt" VerticalAlignment="Top" Foreground="White" Width="479" FontSize="14" />
-        <Label Content="0.0.0.0" Height="59" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="12,117,0,0" Name="lblMCLoc" VerticalAlignment="Top" Foreground="White" FontSize="26" Width="479" FontStretch="Normal" />
+        <Label Content="is currently running at:" Height="37" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="12,105,0,0" Name="lblRunningAt" VerticalAlignment="Top" Foreground="White" Width="479" FontSize="14" />
+        <Label Content="0.0.0.0" Height="59" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="12,124,0,0" Name="lblMCLoc" VerticalAlignment="Top" Foreground="White" FontSize="26" Width="479" FontStretch="Normal" />
         <Label Content="To use MouseControl, simply:" HorizontalContentAlignment="Center" Height="40" HorizontalAlignment="Left" Margin="12,193,0,0" Name="lblConnect" VerticalAlignment="Top" Foreground="White" FontSize="14" Width="479" />
         <Image Source="Smartphone.png" Margin="63,237,404,55" />
         <Label Content="1) Grab your smartphone" Height="28" HorizontalAlignment="Left" Margin="6,298,0,0" Name="label1" VerticalAlignment="Top" Foreground="White" />
